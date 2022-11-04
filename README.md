@@ -1,7 +1,8 @@
 # CSE210-05: greed game
 
 # TODO 
-    -write program including at least 8 classes
+    -Fix issue with collision not working
+    -(If time allows) Make some code to work around errors
 
 ## Overview: 
     Greed is a game where the player seeks to gather as many falling gems as possible. 

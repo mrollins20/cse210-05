@@ -49,27 +49,42 @@ def main():
     player.set_position(position)
     cast.add_actor("player", player)
     
-    # create the artifacts
+    # create the artifact
+    
+    text = "*"
+    x = random.randint(1, COLS - 1)
+    y = random.randint(1, ROWS - 1)
+    position = Point(x, y)
+    position = position.scale(CELL_SIZE)
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color = Color(r, g, b)
+    
+    artifact = Artifact()
+    artifact.set_text(text)
+    artifact.set_font_size(FONT_SIZE)
+    artifact.set_color(color)
+    artifact.set_position(position)
+    cast.add_actor("artifacts", artifact)
 
-    for n in range(DEFAULT_ARTIFACTS):
-        text = "{}"
+    # create the boulders
+    text = "{}"
+    x = random.randint(1, COLS - 1)
+    y = random.randint(1, ROWS - 1)
+    position = Point(x, y)
+    position = position.scale(CELL_SIZE)
+    r = 150
+    g = 150
+    b = 100
+    color = Color(r, g, b)
 
-        x = random.randint(1, COLS - 1)
-        y = random.randint(1, ROWS - 1)
-        position = Point(x, y)
-        position = position.scale(CELL_SIZE)
-
-        r = random.randint(0, 255)
-        g = random.randint(0, 255)
-        b = random.randint(0, 255)
-        color = Color(r, g, b)
-        
-        artifact = Artifact()
-        artifact.set_text(text)
-        artifact.set_font_size(FONT_SIZE)
-        artifact.set_color(color)
-        artifact.set_position(position)
-        cast.add_actor("artifacts", artifact)
+    boulder = Artifact()
+    boulder.set_text(text)
+    boulder.set_font_size(FONT_SIZE)
+    boulder.set_color(color)
+    boulder.set_position(position)
+    cast.add_actor("boulders", boulder)
 
     # start the game
     keyboard_service = KeyboardService(CELL_SIZE)

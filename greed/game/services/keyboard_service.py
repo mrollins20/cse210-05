@@ -45,3 +45,15 @@ class KeyboardService:
         direction = direction.scale(self._cell_size)
         
         return direction
+    
+    def get_entity_direction(self):
+        """Sets the entities direction to fall.
+
+        Returns:
+            Point: The direction.
+        """
+        dx = 0
+        dy = 1
+
+        direction = Point(dx, dy)
+        return direction
