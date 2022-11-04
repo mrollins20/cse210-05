@@ -11,42 +11,38 @@
 To start the game, begin by running the "__main__.py" file. 
 
 ## Help/Information:
-    directory:
-        root (main folder/parent folder)
-        |
-        \---greed
-        |   |    __main__.py
-        |   \---game
-        |       |
-        |       \---directing
-        |       |   |
-        |       |   |   director.py
-        |       |
-        |       \---services
-        |       |
-        |       \---shared
-        |
-        \---__main__.py
-    
-    ```
-    root                            (project root folder)
-    +-- greed                       (source code for game)
-      +-- game                      (specific game classes)
-        +-- casting                 (contains classes for entities)
-            +-- ?
-        +-- directing               (contains director class)
-            +-- director.py
-        +-- services                (contains keyboard and video classes borrowed from "BYUI's, rfk game" code)
-            +-- keyboard_service.py 
-            +-- video_service.py
-        +-- shared                  (contains color and point classes borrowed from "BYUI's, rfk game" code)
-            +-- color.py
-            +-- point.py
-      +-- __main__.py               (entry point for program)
-    +-- README.md                   (general info)
-    ```
+    Directory is as follows:
+    root                                (project root folder)
+    |
+    \-- greed                           (source code for game)
+    |   |
+    |   \-- game                        (specific game classes)
+    |   |   |
+    |   |   \-- casting                  (contains casting classes)
+    |   |   |   |
+    |   |   |   \-- ?
+    |   |   |
+    |   |   \-- directing                (contains director class)
+    |   |   |   |
+    |   |   |   \-- director.py
+    |   |   |
+    |   |   \-- services                 (contains service classes)
+    |   |   |   |
+    |   |   |   \-- keyboard_service.py 
+    |   |   |   \-- video_service.py
+    |   |   |
+    |   |   \-- shared                   (contains shared classes)
+    |   |   |   |
+    |   |   |   \-- color.py
+    |   |   |   \-- point.py
+    |   |   |
+    |   |   \-- art.py                   (contains classes for graphics/art)
+    |   |
+    |   \-- __main__.py                  (entry point for program)
+    |
+    \-- README.md                           (general info)
 
-To find more information, you can see the base code in the repository at https://github.com/mrollins20/cse210-05
+    To find more information, you can see the base code in the repository at https://github.com/mrollins20/cse210-05
 
 ## Contributers:
     Helaman Cristian Pinheiro Ewerton - 
