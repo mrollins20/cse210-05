@@ -11,6 +11,8 @@
 To start the game, begin by running the "__main__.py" file. 
 
 ## Help/Information:
+    There is a lot from this program that borrows similar elements already created for us in the rfk activity from the BYUI week07 activity, so to save time and help ensure quality, those essential components have been included.
+
     Directory is as follows:
     root                                (project root folder)
     |
@@ -28,21 +30,22 @@ To start the game, begin by running the "__main__.py" file.
     |   |   |
     |   |   \-- services                 (contains service classes)
     |   |   |   |
-    |   |   |   \-- keyboard_service.py 
-    |   |   |   \-- video_service.py
+    |   |   |   \-- keyboard_service.py  (borrowed from BYUI: week07 rfk activity)
+    |   |   |   \-- video_service.py     (borrowed from BYUI: week07 rfk activity)
     |   |   |
     |   |   \-- shared                   (contains shared classes)
     |   |   |   |
-    |   |   |   \-- color.py
-    |   |   |   \-- point.py
+    |   |   |   \-- color.py             (borrowed from BYUI: week07 rfk activity)
+    |   |   |   \-- point.py             (borrowed from BYUI: week07 rfk activity)
     |   |   |
     |   |   \-- art.py                   (contains classes for graphics/art)
     |   |
     |   \-- __main__.py                  (entry point for program)
     |
-    \-- README.md                           (general info)
+    \-- README.md                        (general info)
 
     To find more information, you can see the base code in the repository at https://github.com/mrollins20/cse210-05
+    rfk files borrowed from activity located at https://byui-cse.github.io/cse210-course-competency/inheritance/materials/rfk-specification.html
 
 ## Contributers:
     Helaman Cristian Pinheiro Ewerton - 
